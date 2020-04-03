@@ -4,20 +4,20 @@ public class InputOutput{
 	public static void main(String [] args){
 		Scanner scanner = new Scanner(System.in);
 		String nama;
-		int jumlahSks;
+		int jumlahSks, nilai;
 		double IPK;
 		
 		System.out.print("Masukkan nama anda: ");
 		nama = scanner.nextLine();
 		System.out.println("Hai, "+nama);
 		
-		System.out.print("Masukkan jumlah SKS yang sudah ditempuh: ");
+		System.out.print("Masukkan jumlah SKS yang sudah diambil: ");
 		jumlahSks = scanner.nextInt();
 		
-		System.out.print("Masukkan IPK Sementara : ");
-		IPK = scanner.nextDouble();
+		System.out.print("Masukkan Jumlah Nilai Semester ini: ");
+		nilai = scanner.nextInt();
 		
-		double jumlah = IPK * jumlahSks;
-		System.out.print("Total Nilai = "+jumlah);
+		IPK = nilai / jumlahSks;
+		System.out.print("Nilai IP Anda Semester ini adalah: "+IPK);
 	}
 }
