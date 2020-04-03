@@ -1,7 +1,7 @@
 package koneksi;
 
 public class Database{
-	public static void hubungkan (String [] args){
+	public static void hubungkan(){
 		System.out.println("Database Terhubung. .");
 	}
 }
